@@ -6,6 +6,7 @@ const Products = () => {
     useEffect(() => {
         console.log("***** useEffect from products invoked *****");
         //please ensure you have a REST API running in local on port 8080 with end point products
+        //if you don't have local setup use Git hub API https://api.github.com/userss
         fetch('http://localhost:8080/products')
             .then( response => response.json())
             .then(data => {
